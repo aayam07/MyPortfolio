@@ -17,11 +17,8 @@ export default function Writing() {
           <div className="w-12 h-12 rounded-full bg-muted flex items-center justify-center mx-auto text-muted-foreground">
             <PenLine className="w-6 h-6" />
           </div>
-          <div className="space-y-1.5 max-w-md mx-auto">
+          <div className="space-y-1 max-w-md mx-auto">
             <h3 className="text-base font-semibold text-foreground">Articles in progress</h3>
-            <p className="text-sm text-muted-foreground leading-relaxed">
-              I&apos;m currently working on in-depth technical essays regarding live 5G point cloud streaming, semantic communication architectures, and high-velocity engineering.
-            </p>
           </div>
           <p className="text-xs text-muted-foreground pt-2">
             Check back soon or follow my updates on{" "}
