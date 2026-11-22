@@ -91,11 +91,15 @@ export default async function Home() {
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           {researchData?.projects.slice(0, 2).map((project: any, i: number) => (
-            <div key={i} className="p-6 rounded-2xl border border-border bg-card hover:border-foreground/20 transition-colors">
-              <h3 className="font-semibold text-lg mb-2">{project.title}</h3>
-              <p className="text-sm text-muted-foreground mb-4 line-clamp-3">{project.description}</p>
+            <Link 
+              key={i} 
+              href="/research"
+              className="p-6 rounded-2xl border border-border bg-card hover:border-foreground/30 transition-all block group"
+            >
+              <h3 className="font-semibold text-lg mb-2 group-hover:text-primary transition-colors">{project.title}</h3>
+              <p className="text-sm text-muted-foreground mb-4 line-clamp-3 leading-relaxed">{project.description}</p>
               <p className="text-xs font-medium text-foreground">{project.role} @ {project.institution}</p>
-            </div>
+            </Link>
           ))}
         </div>
       </section>

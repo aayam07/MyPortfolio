@@ -24,18 +24,24 @@ export function ProjectCard({ title, description, tags, link, index }: ProjectCa
       <div>
         <div className="flex items-start justify-between mb-4">
           <h3 className="text-xl font-semibold text-foreground group-hover:text-primary transition-colors">
-            {title}
+            {link ? (
+              <a href={link} target="_blank" rel="noopener noreferrer" className="hover:underline underline-offset-4">
+                {title}
+              </a>
+            ) : (
+              title
+            )}
           </h3>
           {link && (
-            <Link
+            <a
               href={link}
               target="_blank"
               rel="noopener noreferrer"
-              className="text-muted-foreground hover:text-foreground transition-colors"
+              className="text-muted-foreground hover:text-foreground transition-colors p-1 shrink-0"
               aria-label={`View ${title}`}
             >
-              <ArrowUpRight className="w-5 h-5 opacity-0 group-hover:opacity-100 transition-opacity -translate-x-2 translate-y-2 group-hover:translate-x-0 group-hover:translate-y-0" />
-            </Link>
+              <ArrowUpRight className="w-5 h-5 text-muted-foreground group-hover:text-foreground group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-all" />
+            </a>
           )}
         </div>
         <p className="text-sm text-muted-foreground mb-6 line-clamp-3 leading-relaxed">

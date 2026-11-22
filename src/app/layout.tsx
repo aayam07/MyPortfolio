@@ -17,8 +17,41 @@ import { Navigation } from "@/components/Navigation";
 import { Footer } from "@/components/Footer";
 
 export const metadata: Metadata = {
-  title: "Aayam Adhikari",
-  description: "Computer Engineer & Researcher",
+  metadataBase: new URL("https://aayamadhikari.com"),
+  title: {
+    default: "Aayam Adhikari | Computer Engineer & Researcher",
+    template: "%s | Aayam Adhikari",
+  },
+  description: "Personal engineering portfolio and research of Aayam Adhikari — focused on live holographic streaming, 5G wireless systems, and intelligent computing architectures.",
+  keywords: [
+    "Aayam Adhikari",
+    "Computer Engineer",
+    "Researcher",
+    "Holographic Telepresence",
+    "5G Standalone",
+    "Point Cloud Compression",
+    "Machine Learning",
+    "University of Nebraska-Lincoln"
+  ],
+  authors: [{ name: "Aayam Adhikari" }],
+  creator: "Aayam Adhikari",
+  openGraph: {
+    type: "website",
+    locale: "en_US",
+    url: "https://aayamadhikari.com",
+    title: "Aayam Adhikari | Computer Engineer & Researcher",
+    description: "Personal portfolio and research of Aayam Adhikari — focused on live holographic streaming, 5G wireless systems, and intelligent computing architectures.",
+    siteName: "Aayam Adhikari",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Aayam Adhikari | Computer Engineer & Researcher",
+    description: "Personal portfolio and research of Aayam Adhikari — focused on live holographic streaming, 5G wireless systems, and intelligent computing architectures.",
+  },
+  robots: {
+    index: true,
+    follow: true,
+  },
 };
 
 export default function RootLayout({

@@ -1,17 +1,56 @@
 {
   "currentGoals": [
-    "Publish journal paper on semantic communication",
-    "Complete private 5G testbed setup"
+    {
+      "title": "Extended Journal Publication on Semantic Mulsemedia",
+      "status": "In Progress",
+      "details": "Expanding the WiOpt 2026 cross-modal framework with multi-sensor spatial validation and comprehensive SNR resilience analysis."
+    },
+    {
+      "title": "Holographic Conferencing Testbed Optimization",
+      "status": "In Progress",
+      "details": "Refining region-aware octree pipelines to achieve sub-50ms end-to-end latency across live 5G standalone networks."
+    },
+    {
+      "title": "M.S. in Computer Science Completion (UNL)",
+      "status": "On Track",
+      "details": "Target graduation Fall 2027 with thesis defense on intelligent volumetric video delivery."
+    }
   ],
   "futureProjects": [
-    "Open-source ML/DL communication framework",
-    "VR interactive resume"
+    {
+      "title": "Open-Source Offline RL Rate Adaptation Library",
+      "status": "Planned",
+      "details": "Releasing the Conservative Q-Learning (CQL) controller code and dataset for reproducible adaptive 3D point cloud streaming."
+    },
+    {
+      "title": "Multi-Client Volumetric Telepresence Platform",
+      "status": "Planned",
+      "details": "Designing a synchronized spatial meeting room supporting multiple simultaneous users on commodity mixed-reality headsets."
+    }
   ],
   "researchPlans": [
-    "Explore transformer-based models for multi-modal communication"
+    {
+      "title": "Diffusion & Generative Models for Extreme Semantic Compression",
+      "status": "Exploration",
+      "details": "Investigating conditional latent diffusion models to reconstruct photorealistic volumetric avatars from minimal edge signals."
+    },
+    {
+      "title": "Joint Communication and Computation Resource Allocation in 6G",
+      "status": "Exploration",
+      "details": "Studying dynamic task offloading between edge servers and local XR devices under fluctuating radio channels."
+    }
   ],
   "startupIdeas": [
-    "AI-driven bandwidth optimization for AR/VR streams"
+    {
+      "title": "Adaptive Volumetric Streaming Infrastructure",
+      "status": "Concept",
+      "details": "Developer-first SDK and edge CDN infrastructure for streaming live 3D assets and holographic video directly into web and spatial applications."
+    },
+    {
+      "title": "AI-Native Communication Protocol Engine",
+      "status": "Concept",
+      "details": "Novel cross-modal data transport layer cutting enterprise video and sensor bandwidth by up to 90% in bandwidth-constrained environments."
+    }
   ],
-  "longTermVision": "Bridging the gap between intelligent algorithms and next-generation wireless infrastructure."
+  "longTermVision": "Bridging the gap between intelligent computing architectures and next-generation wireless infrastructure to make spatial telepresence as frictionless, photorealistic, and ubiquitous as a phone call."
 }

@@ -1,1 +1,38 @@
-[]
+[
+  {
+    "slug": "understanding-point-cloud-streaming-5g",
+    "title": "Understanding 3D Point Cloud Streaming over 5G Standalone Networks",
+    "date": "November 2026",
+    "readTime": "6 min read",
+    "description": "Why raw volumetric video exceeds 200 Mbps uncompressed, how region-aware octree coding prioritizes human facial features, and when processing bottlenecks overtake network capacity.",
+    "tags": [
+      "Spatial Computing",
+      "5G",
+      "Point Clouds"
+    ]
+  },
+  {
+    "slug": "semantic-communication-mulsemedia",
+    "title": "From Bits to Meaning: The Promise of Cross-Modal Semantic Communication",
+    "date": "October 2026",
+    "readTime": "5 min read",
+    "description": "How pairing CNN-LSTM sensor predictors with 3D conditional GANs cuts transmitted bandwidth by over 96% while reconstructing high-fidelity video under extreme wireless noise.",
+    "tags": [
+      "Machine Learning",
+      "Information Theory",
+      "Research"
+    ]
+  },
+  {
+    "slug": "building-zero-to-one-with-ai",
+    "title": "Engineering at Velocity: Building Zero-to-One Systems with Modern AI",
+    "date": "September 2026",
+    "readTime": "4 min read",
+    "description": "Reflections on moving fast without sacrificing architecture: pairing solid engineering fundamentals with modern AI tooling to ship production-grade systems in record time.",
+    "tags": [
+      "Software Engineering",
+      "AI",
+      "System Design"
+    ]
+  }
+]

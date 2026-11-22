@@ -1,1 +1,50 @@
-[]
+{
+  "currentlyReading": [
+    {
+      "title": "The Art of Doing Science and Engineering: Learning to Learn",
+      "author": "Richard W. Hamming",
+      "category": "Engineering Philosophy",
+      "notes": "Foundational lectures on style of thinking, choosing first-rate problems, and enduring technical vision."
+    },
+    {
+      "title": "Designing Data-Intensive Applications",
+      "author": "Martin Kleppmann",
+      "category": "Distributed Systems",
+      "notes": "The definitive deep dive into reliability, consensus algorithms, and scalability in distributed infrastructure."
+    }
+  ],
+  "recentlyFinished": [
+    {
+      "title": "A Philosophy of Software Design",
+      "author": "John Ousterhout",
+      "category": "Software Architecture",
+      "notes": "A masterclass on managing complexity, designing deep modules, and writing software for readability."
+    },
+    {
+      "title": "Chip War: The Fight for the World's Most Critical Technology",
+      "author": "Chris Miller",
+      "category": "Hardware & Geopolitics",
+      "notes": "Illuminating chronicle of how semiconductors became the structural bedrock of modern computing and geopolitical power."
+    }
+  ],
+  "recommended": [
+    {
+      "title": "The Information: A History, a Theory, a Flood",
+      "author": "James Gleick",
+      "category": "Information Theory",
+      "notes": "Essential historical and theoretical context on Claude Shannon, entropy, communication bits, and language."
+    },
+    {
+      "title": "High Output Management",
+      "author": "Andrew S. Grove",
+      "category": "Leadership & Execution",
+      "notes": "The classic handbook on managerial leverage, high-velocity output, and building resilient engineering teams."
+    },
+    {
+      "title": "Zero to One: Notes on Startups, or How to Build the Future",
+      "author": "Peter Thiel",
+      "category": "Startups & Strategy",
+      "notes": "Thought-provoking essays on technology monopolies, contrarian thinking, and creating net-new value."
+    }
+  ]
+}
