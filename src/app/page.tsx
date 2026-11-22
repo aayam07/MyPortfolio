@@ -2,7 +2,6 @@ import { getJsonData } from "@/lib/data";
 import { ProjectCard } from "@/components/ProjectCard";
 import { Timeline } from "@/components/Timeline";
 import Link from "next/link";
-import Image from "next/image";
 import { ArrowRight, FileText, Mail } from "lucide-react";
 
 export default async function Home() {
@@ -16,16 +15,9 @@ export default async function Home() {
   const selectedExperience = experienceData?.slice(0, 3) || [];
 
   return (
-    <div className="max-w-4xl mx-auto px-6 space-y-32">
+    <div className="max-w-4xl mx-auto px-6 space-y-28 md:space-y-32">
       {/* Hero Section */}
-      <section className="pt-20 md:pt-32">
-        <Image 
-          src="/images/profile/my_image.png" 
-          alt="Aayam Adhikari" 
-          width={80} 
-          height={80} 
-          className="rounded-full object-cover mb-8 border border-border bg-muted shadow-sm"
-        />
+      <section className="pt-6 md:pt-12">
         <h1 className="text-4xl md:text-6xl font-bold tracking-tight text-foreground mb-4">
           {homeData?.hero.greeting}
         </h1>
