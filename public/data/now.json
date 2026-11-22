@@ -1,0 +1,29 @@
+{
+  "location": "Lincoln, Nebraska",
+  "lastUpdated": "November 2026",
+  "statusTag": "Actively Building & Researching",
+  "sections": [
+    {
+      "title": "Building & Researching",
+      "description": "Developing an end-to-end live holographic video conferencing testbed over private OpenAirInterface (OAI) 5G standalone networks, fusing synchronized Intel RealSense depth cameras into real-time 3D point clouds in Unity."
+    },
+    {
+      "title": "Pursuing",
+      "description": "Master's in Computer Science at the University of Nebraska-Lincoln, specializing in wireless networks, multi-access edge computing, and reinforcement learning controllers."
+    },
+    {
+      "title": "Mentoring",
+      "description": "Mentoring undergraduate Senior Design engineering teams on point cloud capture, transmission architectures, and real-time spatial computing integration."
+    },
+    {
+      "title": "Open To",
+      "description": "Ambitious systems, startups & research. Always eager to exchange ideas on 0-to-1 engineering, distributed systems, and frontier AI tools."
+    },
+    {
+      "title": "Reading & Exploring",
+      "description": "Diving into recent papers on semantic communication, point cloud compression (MPEG G-PCC / Draco), and high-velocity software engineering paradigms."
+    }
+  ],
+  "excites": "Building high-performance holographic streaming systems that bring photorealistic volumetric video into real-time low-latency reality.",
+  "motto": "Everyone is living life for the first time, be kind."
+}

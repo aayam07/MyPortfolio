@@ -1,0 +1,16 @@
+[
+  {
+    "institution": "University of Nebraska-Lincoln",
+    "degree": "Master of Science in Computer Science",
+    "period": "Spring 2026 - Expected Fall 2027",
+    "location": "Lincoln, NE, USA",
+    "details": "GPA: 4.0/4.0. Relevant Coursework: Communication Networks, Multi-access Edge Computing, Internet Systems and Programming."
+  },
+  {
+    "institution": "Kathmandu University",
+    "degree": "Bachelor of Engineering in Computer Engineering",
+    "period": "2019 - 2024",
+    "location": "Dhulikhel, Nepal",
+    "details": "CGPA: 3.92/4.0 (Batch Topper, ranked 1st of 60). Relevant Coursework: Artificial Intelligence, Data Structures & Algorithms, Cloud Computing, Digital Signal Processing."
+  }
+]

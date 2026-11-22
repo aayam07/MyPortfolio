@@ -1,0 +1,70 @@
+{
+  "interests": [
+    "Live Holographic Video Streaming",
+    "Semantic Communication",
+    "Augmented Reality (AR) / Extended Reality (XR)",
+    "Reinforcement Learning (RL)",
+    "Point Cloud Compression & Streaming",
+    "5G Networks & OpenAirInterface (OAI)",
+    "Multi-Access Edge Computing (MEC)",
+    "Cross-Modal Deep Learning"
+  ],
+  "projects": [
+    {
+      "id": "holo-comm-5g",
+      "title": "Live Holographic Video Streaming over 5G",
+      "role": "Graduate Research Assistant",
+      "institution": "University of Nebraska-Lincoln",
+      "period": "Jan 2026 - Present",
+      "description": "Building an end-to-end live holographic video conferencing testbed fusing 3 Intel RealSense depth cameras into a 3D point cloud at 10 fps over a private OpenAirInterface 5G standalone network to Unity/C#. Designed region-aware point cloud coding using PCA to prioritize facial details, raising head visual quality by 6.5 dB PSNR at the same network traffic. Deployed an offline reinforcement learning controller (Conservative Q-Learning) across 58 live sessions, which achieved a 1.38 fps higher frame rate and reduced time spent in the lowest-quality mode from 41.0% down to 9.3% compared to a conventional threshold-based controller."
+    },
+    {
+      "id": "semantic-mulsemedia",
+      "title": "Semantic Mulsemedia Communication Framework",
+      "role": "Graduate Research Assistant",
+      "institution": "University of Nebraska-Lincoln (Funded by NASA Nebraska Space Grant & Layman Seed Award)",
+      "period": "Jan 2026 - Present",
+      "description": "Developed a novel cross-modal framework (CNN-LSTM sensor predictor + 3D conditional GAN video reconstructor) that transmits only one initial video frame alongside sensor measurements, cutting transmitted data by over 96%. Reconstructs high-fidelity video at the receiver even under severe wireless channel noise and poor signal conditions down to 3 dB signal-to-noise ratio."
+    },
+    {
+      "id": "xr-senior-design",
+      "title": "Holographic Application Development on Meta Quest 3",
+      "role": "Graduate Mentor (Senior Design Program)",
+      "institution": "University of Nebraska-Lincoln",
+      "period": "Jan 2026 - Present",
+      "description": "Mentoring 5-member undergraduate engineering teams on point cloud capture, transmission, and real-time XR integration."
+    }
+  ],
+  "publications": [
+    {
+      "title": "Cross-Modal Creation and Recovery for Semantic Mulsemedia Communication",
+      "authors": "Adhikari, A., Guo, H., and Akyildiz, I. F.",
+      "conference": "Proc. 24th IEEE/IFIP International Symposium on Modeling and Optimization in Mobile, Ad Hoc, and Wireless Networks (WiOpt)",
+      "year": "2026",
+      "doi": "10.23919/WiOpt71098.2026.11568227",
+      "details": "First author. Proposed a cross-modal semantic communication framework that transmits compact sensor measurements instead of streaming continuous raw video, cutting transmitted data by over 96%. A 3D-convolutional conditional GAN then reconstructs the missing video at the receiver, preserving high visual clarity (SSIM 0.83) even under severe wireless channel noise and degraded signal conditions (down to 3 dB signal-to-noise ratio). Research funded by the NASA Nebraska Space Grant and the Layman Seed Award."
+    },
+    {
+      "title": "Region-Aware Adaptive Streaming for Holographic Video Conferencing",
+      "authors": "Adhikari, A., Sarpong, D. A., Bhusal, R., Guo, H., Wang, P., and Akyildiz, I. F.",
+      "conference": "Submitted to National Conference on Communications (NCC)",
+      "year": "2027",
+      "doi": "",
+      "details": "First author. Addresses the massive bandwidth and computational bottlenecks of streaming live 3D human point clouds (>200 Mbps uncompressed) over dynamic 5G networks. Developed a region-aware coding scheme that segments the head from the body using PCA to prioritize facial details, improving visual quality by 6.5 dB PSNR without increasing network bandwidth. Formulated a full-system model capturing the interplay between point cloud processing and network limits, and implemented an offline Conservative Q-Learning (CQL) controller that delivers a 1.38 fps higher frame rate and reduces time spent in the lowest-quality representation from 41.0% to 9.3% compared to conventional threshold-based adaptation."
+    }
+  ],
+  "presentations": [
+    {
+      "title": "Poster Presentation: Semantic Mulsemedia Communication",
+      "event": "Nebraska Research Days, University of Nebraska-Lincoln",
+      "date": "April 2026",
+      "details": "Poster presentation of the first-author IEEE/IFIP WiOpt 2026 paper on cross-modal semantic creation and recovery."
+    },
+    {
+      "title": "Oral Presentation: Semantic Mulsemedia Communication",
+      "event": "136th Annual Meeting of the Nebraska Academy of Sciences (Aeronautics and Space Section)",
+      "date": "April 2026",
+      "details": "Conference research presentation of the first-author IEEE/IFIP WiOpt 2026 paper on cross-modal semantic creation and recovery."
+    }
+  ]
+}

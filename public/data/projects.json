@@ -1,0 +1,83 @@
+[
+  {
+    "id": "merotutor",
+    "title": "MeroTutor",
+    "description": "A comprehensive home-tutor marketplace connecting students with verified educators, featuring real-time messaging via Socket.io and secure payments via Stripe.",
+    "tags": [
+      "Node.js",
+      "MySQL",
+      "Socket.io",
+      "Stripe",
+      "JavaScript"
+    ],
+    "link": "https://github.com/aayam07/MeroTutorApp",
+    "featured": true
+  },
+  {
+    "id": "elibrary",
+    "title": "eLibrary iOS",
+    "description": "An iOS library management application featuring real-time database sync with Firebase and automated Twilio SMS due-date alerts. Demonstrated at Kathmandu University's library.",
+    "tags": [
+      "Swift",
+      "SwiftUI",
+      "Firebase",
+      "Twilio API"
+    ],
+    "link": "https://github.com/aayam07/eLibrary",
+    "featured": true
+  },
+  {
+    "id": "ku-hallbooking",
+    "title": "KU Venue Booking System",
+    "description": "Production venue booking system built with the MERN stack and deployed on a self-managed Ubuntu VM, actively serving all KU departments, affiliated colleges, and students.",
+    "tags": [
+      "React",
+      "Node.js",
+      "Express",
+      "MongoDB",
+      "Ubuntu VM"
+    ],
+    "link": "https://hallbooking.ku.edu.np",
+    "featured": true
+  },
+  {
+    "id": "ku-logsheet",
+    "title": "AICKU Staff Logsheet & NTIC Portal",
+    "description": "Staff activity and attendance tracking system utilized daily by 300+ university employees, alongside the official web presence for the Nepal Technology Innovation Center.",
+    "tags": [
+      "Web Application",
+      "Database Systems",
+      "MERN",
+      "Production Deployment"
+    ],
+    "link": "https://logsheet.aic.ku.edu.np",
+    "featured": false
+  },
+  {
+    "id": "cloud-pos",
+    "title": "Cloud POS Microservices & EFK Logging",
+    "description": "Containerized multi-cloud point-of-sale microservices across AWS and Azure with Kubernetes, paired with an EFK (Elasticsearch, Fluentd, Kibana) centralized cluster monitoring pipeline.",
+    "tags": [
+      "Docker",
+      "Kubernetes",
+      "AWS",
+      "Azure",
+      "Elasticsearch"
+    ],
+    "link": "",
+    "featured": false
+  },
+  {
+    "id": "freelance-websites",
+    "title": "KU Architecture Club & 9th IPSF APRO GPPed",
+    "description": "High-performance, SEO-optimized responsive web portals built for international pharmacy education programs and the Kathmandu University Architecture Club.",
+    "tags": [
+      "JavaScript",
+      "HTML5",
+      "CSS3",
+      "SEO"
+    ],
+    "link": "https://archclub.ku.edu.np",
+    "featured": false
+  }
+]

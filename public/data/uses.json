@@ -1,0 +1,65 @@
+{
+  "languages": [
+    "Python",
+    "C#",
+    "C++",
+    "C",
+    "JavaScript",
+    "SQL",
+    "Swift"
+  ],
+  "machineLearning": [
+    "PyTorch",
+    "scikit-learn",
+    "NumPy & Pandas",
+    "CNN & LSTM",
+    "Conditional GAN",
+    "Offline Reinforcement Learning (CQL)"
+  ],
+  "wirelessAndXR": [
+    "OpenAirInterface (OAI) 5G Core & RAN",
+    "USRP B210 Software-Defined Radios (SDR)",
+    "OctoClock Synchronization",
+    "Unity & C#",
+    "cwipc point cloud suite",
+    "MPEG G-PCC & Google Draco (Octree Coding)",
+    "Intel RealSense D435i & ArUco calibration"
+  ],
+  "systemsAndCloud": [
+    "Docker & Kubernetes",
+    "AWS & Azure",
+    "Linux (Ubuntu)",
+    "Git & CI/CD",
+    "Snowflake & Power BI",
+    "Node.js & MySQL",
+    "Firebase"
+  ],
+  "hardware": [
+    "Windows Workstation (Blackwell GPU architecture) — Dedicated Sender PC for real-time multi-camera capture, point cloud fusion (cwipc), and octree encoding",
+    "MacBook Pro (M-Series)",
+    "3× Intel RealSense D435i RGB-D Cameras (multi-view synchronized point cloud capture)",
+    "USRP B210 Software-Defined Radios (SDR)",
+    "Meta Quest 3 XR Headset",
+    "OctoClock Synchronization System"
+  ],
+  "aiTools": [
+    "Google Gemini",
+    "Anthropic Claude",
+    "ChatGPT / OpenAI",
+    "GitHub Copilot",
+    "Cursor"
+  ],
+  "softwareAndDev": [
+    "VS Code",
+    "Unity Editor",
+    "OpenAirInterface (OAI) 5G Stack",
+    "Ubuntu Linux Terminal",
+    "Docker Desktop"
+  ],
+  "productivity": [
+    "Notion",
+    "Linear",
+    "Zotero (Reference Management)",
+    "Obsidian"
+  ]
+}

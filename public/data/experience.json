@@ -1,0 +1,47 @@
+[
+  {
+    "id": "unl-gra",
+    "role": "Graduate Research Assistant",
+    "company": "University of Nebraska-Lincoln",
+    "location": "Lincoln, NE",
+    "period": "January 2026 - Present",
+    "type": "Part time, 20 hours/week",
+    "description": "Advised by Dr. Hongzhi Guo. Research funded by the NASA Nebraska Space Grant and the Layman Seed Award. Developing an end-to-end live holographic video streaming testbed over private OpenAirInterface (OAI) 5G standalone networks with offline RL adaptive streaming, and novel cross-modal semantic mulsemedia communication models."
+  },
+  {
+    "id": "unl-mentor",
+    "role": "Graduate Mentor, Senior Design Program",
+    "company": "University of Nebraska-Lincoln",
+    "location": "Lincoln, NE",
+    "period": "January 2026 - Present",
+    "type": "Mentorship",
+    "description": "Authored industry-sponsor pitch for migrating holographic communication systems from HoloLens 2 to Meta Quest 3 with AI-based quality enhancement; mentor 5-member undergraduate engineering teams on point cloud capture, transmission, and system integration."
+  },
+  {
+    "id": "ku-researcher",
+    "role": "Researcher",
+    "company": "Kathmandu University",
+    "location": "Dhulikhel, Nepal",
+    "period": "October 2024 - October 2025",
+    "type": "Full time, 42 hours/week",
+    "description": "Built and deployed Kathmandu University's venue booking system (MERN stack) on a self-managed Ubuntu VM used by all KU departments and students (hallbooking.ku.edu.np). Developed the AICKU employee logsheet management system used by 300+ staff (logsheet.aic.ku.edu.np) and the Nepal Technology Innovation Center website (ntic.ku.edu.np). Delivered digital literacy programs across 8 remote schools in partnership with local municipalities."
+  },
+  {
+    "id": "lis-intern",
+    "role": "Software Intern",
+    "company": "LIS Nepal - A Yomari Company",
+    "location": "Nepal",
+    "period": "April 2024 - July 2024",
+    "type": "Full time, 40 hours/week",
+    "description": "Containerized and deployed international point-of-sale (POS) microservices using Docker and Kubernetes across AWS and Azure. Developed Python ETL pipelines for Snowflake/SQL data warehousing, built Power BI reports, and deployed an EFK stack (Elasticsearch, Fluentd, Kibana) for centralized cluster log monitoring."
+  },
+  {
+    "id": "freelance-web",
+    "role": "Web Developer",
+    "company": "Freelance Projects",
+    "location": "Nepal",
+    "period": "2024",
+    "type": "Part time",
+    "description": "Designed, developed, and deployed production websites with SEO optimization for the 9th IPSF APRO Good Pharmacy Practice Education (GPPed) program and the Kathmandu University Architecture Club (archclub.ku.edu.np)."
+  }
+]
