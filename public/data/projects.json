@@ -2,7 +2,15 @@
   {
     "id": "merotutor",
     "title": "MeroTutor",
+    "role": "Full Stack Engineer & Creator",
     "description": "A comprehensive home-tutor marketplace connecting students with verified educators, featuring real-time messaging via Socket.io and secure payments via Stripe.",
+    "longDescription": "MeroTutor is an end-to-end home tuition marketplace built from the ground up to solve educational matching in Nepal. It connects students and parents directly with verified subject tutors, featuring a custom booking pipeline, verified educator profiles, real-time negotiation chat, and secure online transaction processing.",
+    "keyHighlights": [
+      "Engineered real-time direct messaging between students and tutors using Socket.io with persistent chat histories.",
+      "Integrated Stripe checkout workflows for automated tuition billing and payment escrow.",
+      "Designed a normalized relational database schema in MySQL for user profiles, subject taxonomies, booking schedules, and review ratings.",
+      "Implemented role-based access control (RBAC) separating student, tutor, and administrative dashboards."
+    ],
     "tags": [
       "Node.js",
       "MySQL",
@@ -22,7 +30,15 @@
   {
     "id": "elibrary",
     "title": "eLibrary iOS",
+    "role": "Mobile iOS Developer",
     "description": "An iOS library management application featuring real-time database sync with Firebase and automated Twilio SMS due-date alerts. Demonstrated at Kathmandu University's library.",
+    "longDescription": "eLibrary is a native iOS application engineered with Swift and SwiftUI to modernize book tracking, borrowing lifecycles, and student overdue reminders. The application was demonstrated directly at Kathmandu University's central library to demonstrate digital cataloging and real-time inventory synchronization.",
+    "keyHighlights": [
+      "Built native SwiftUI responsive views with smooth state management and offline-first data caching.",
+      "Integrated Cloud Firestore and Firebase Authentication for instantaneous real-time catalog search and book availability status.",
+      "Configured automated serverless Twilio SMS triggers that notify students 48 hours prior to due dates, drastically cutting overdue returns.",
+      "Implemented a barcode/QR scanning feature using AVFoundation for instant book checkout and check-in."
+    ],
     "tags": [
       "Swift",
       "SwiftUI",
@@ -41,7 +57,15 @@
   {
     "id": "ku-hallbooking",
     "title": "KU Venue Booking System",
+    "role": "Lead Full Stack Developer & Linux Administrator",
     "description": "Production venue booking system built with the MERN stack and deployed on a self-managed Ubuntu VM, actively serving all KU departments, affiliated colleges, and students.",
+    "longDescription": "The Kathmandu University Venue Booking System is an enterprise scheduling platform developed to replace manual paperwork and double-booking conflicts across university auditoriums, seminar halls, and meeting spaces. It is hosted on a self-managed Ubuntu Linux virtual machine on campus infrastructure and is in daily production use by university leadership, faculty, and student clubs.",
+    "keyHighlights": [
+      "Architected complete MERN stack (MongoDB, Express, React, Node.js) web application with role-based administrative approval workflows.",
+      "Self-managed production deployment on a dedicated Ubuntu Linux VM with Nginx reverse proxy, SSL certification, and PM2 process management.",
+      "Developed conflict-detection algorithms ensuring zero overlapping reservations across all campus halls.",
+      "Integrated university SSO authentication and automated email confirmation notifications."
+    ],
     "tags": [
       "React",
       "Node.js",
@@ -61,7 +85,15 @@
   {
     "id": "ku-logsheet-ntic",
     "title": "AICKU Staff Logsheet & NTIC Portal",
+    "role": "Systems Developer",
     "description": "Enterprise staff activity and attendance tracking system utilized daily by 300+ university employees, alongside the official web presence for the Nepal Technology Innovation Center.",
+    "longDescription": "Developed two core institutional platforms for Kathmandu University: the daily activity logsheet management system used by 300+ researchers, professors, and administrative staff at the Asian Institute of Technology - Kathmandu University (AICKU), and the official portal for the Nepal Technology Innovation Center (NTIC).",
+    "keyHighlights": [
+      "Engineered daily timesheet, task reporting, and administrative evaluation portals serving over 300 active staff members.",
+      "Designed clean, responsive web user interfaces ensuring high accessibility across mobile and desktop devices.",
+      "Implemented administrative export tools for payroll reporting, task auditing, and staff workload analytics.",
+      "Delivered production deployments for ntic.ku.edu.np and logsheet.aic.ku.edu.np on university subdomains."
+    ],
     "tags": [
       "Web Application",
       "Database Systems",
@@ -84,7 +116,14 @@
   {
     "id": "ku-archclub",
     "title": "Kathmandu University Architecture Club",
+    "role": "Frontend Developer",
     "description": "Official online presence and architectural showcase platform for the Kathmandu University Architecture Club, featuring clean responsive layouts and search engine optimization.",
+    "longDescription": "Designed and deployed the official web showcase for the Department of Architecture at Kathmandu University. The portal features student architectural design portfolios, exhibition schedules, club initiatives, and alumni galleries.",
+    "keyHighlights": [
+      "Developed high-fidelity responsive layouts emphasizing visual design, photography, and architectural blueprints.",
+      "Optimized assets and metadata for search engines and high performance across all mobile devices.",
+      "Implemented accessible navigation and dynamic gallery previews without heavy external libraries."
+    ],
     "tags": [
       "HTML5",
       "CSS3",
@@ -103,7 +142,14 @@
   {
     "id": "ipsf-gpped",
     "title": "9th IPSF APRO GPPed Program Website",
+    "role": "Web Developer",
     "description": "Responsive conference and educational portal designed and deployed for the 9th IPSF Asia Pacific Regional Office Good Pharmacy Practice Education (GPPed) program.",
+    "longDescription": "Contract web development project for an international regional conference organized under the International Pharmaceutical Students' Federation (IPSF) Asia Pacific Regional Office. The site served delegates, keynote speakers, and attendees across the Asia-Pacific region.",
+    "keyHighlights": [
+      "Built multi-page conference program schedule, keynote speaker directory, and workshop registration guides.",
+      "Ensured cross-browser compatibility and mobile responsiveness for international delegates.",
+      "Implemented on-page SEO and fast-loading media delivery."
+    ],
     "tags": [
       "Web Development",
       "SEO",
@@ -116,7 +162,15 @@
   {
     "id": "cloud-pos",
     "title": "Cloud POS Microservices & EFK Logging",
+    "role": "Software Engineering Intern",
     "description": "Containerized multi-cloud point-of-sale microservices across AWS and Azure with Kubernetes, paired with an EFK (Elasticsearch, Fluentd, Kibana) centralized cluster monitoring pipeline.",
+    "longDescription": "Developed during my software engineering internship at LIS Nepal (A Yomari Company). Focused on DevOps automation, cloud microservice orchestration, and centralized observability for an enterprise international point-of-sale (POS) retail software suite.",
+    "keyHighlights": [
+      "Containerized POS microservice dependencies with Docker and orchestrated multi-region deployments on Kubernetes across AWS and Azure.",
+      "Configured an EFK (Elasticsearch, Fluentd, Kibana) centralized log streaming pipeline for real-time cluster health and transaction debugging.",
+      "Authored automated Python ETL data pipelines moving POS transactional records into Snowflake data warehouses.",
+      "Built executive Power BI dashboards visualizing transaction latencies, sales volume, and store terminal metrics."
+    ],
     "tags": [
       "Docker",
       "Kubernetes",

@@ -10,6 +10,7 @@ interface ProjectLink {
 }
 
 interface ProjectCardProps {
+  id?: string;
   title: string;
   description: string;
   tags: string[];
@@ -18,7 +19,7 @@ interface ProjectCardProps {
   index: number;
 }
 
-export function ProjectCard({ title, description, tags, link, links, index }: ProjectCardProps) {
+export function ProjectCard({ id, title, description, tags, link, links, index }: ProjectCardProps) {
   const allLinks = links && links.length > 0 ? links : link ? [{ label: "Visit", url: link }] : [];
   const primaryLink = link || links?.[0]?.url;
 
@@ -33,7 +34,14 @@ export function ProjectCard({ title, description, tags, link, links, index }: Pr
       <div>
         <div className="flex flex-wrap items-center gap-x-3 gap-y-2 mb-3">
           <h3 className="text-xl font-semibold text-foreground">
-            {primaryLink ? (
+            {id ? (
+              <Link
+                href={`/projects/${id}`}
+                className="hover:underline underline-offset-4"
+              >
+                {title}
+              </Link>
+            ) : primaryLink ? (
               <a
                 href={primaryLink}
                 target="_blank"
@@ -65,11 +73,12 @@ export function ProjectCard({ title, description, tags, link, links, index }: Pr
           )}
         </div>
 
-        <p className="text-sm text-muted-foreground mb-6 line-clamp-3 leading-relaxed">
+        <p className="text-sm text-muted-foreground mb-6 leading-relaxed">
           {description}
         </p>
       </div>
-      <div className="flex flex-wrap gap-2">
+
+      <div className="flex flex-wrap gap-2 pt-2 border-t border-border/40">
         {tags.map((tag) => (
           <span
             key={tag}
