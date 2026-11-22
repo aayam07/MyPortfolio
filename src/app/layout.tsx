@@ -15,9 +15,13 @@ const geistMono = Geist_Mono({
 
 import { Navigation } from "@/components/Navigation";
 import { Footer } from "@/components/Footer";
+import { PersonJsonLd } from "@/components/PersonJsonLd";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://aayamadhikari.com"),
+  alternates: {
+    canonical: "/",
+  },
   title: {
     default: "Aayam Adhikari | Computer Engineer & Researcher",
     template: "%s | Aayam Adhikari",
@@ -25,15 +29,18 @@ export const metadata: Metadata = {
   description: "Personal engineering portfolio and research of Aayam Adhikari — focused on live holographic streaming, 5G wireless systems, and intelligent computing architectures.",
   keywords: [
     "Aayam Adhikari",
+    "Aayam",
+    "Adhikari",
     "Computer Engineer",
     "Researcher",
     "Holographic Telepresence",
     "5G Standalone",
     "Point Cloud Compression",
+    "Semantic Communication",
     "Machine Learning",
     "University of Nebraska-Lincoln"
   ],
-  authors: [{ name: "Aayam Adhikari" }],
+  authors: [{ name: "Aayam Adhikari", url: "https://aayamadhikari.com" }],
   creator: "Aayam Adhikari",
   openGraph: {
     type: "website",
@@ -51,6 +58,13 @@ export const metadata: Metadata = {
   robots: {
     index: true,
     follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
   },
 };
 
@@ -61,6 +75,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
+      <head>
+        <PersonJsonLd />
+      </head>
       <body className="min-h-screen bg-background font-sans text-foreground">
         <ThemeProvider
           attribute="class"
