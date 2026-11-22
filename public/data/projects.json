@@ -11,6 +11,12 @@
       "JavaScript"
     ],
     "link": "https://github.com/aayam07/MeroTutorApp",
+    "links": [
+      {
+        "label": "GitHub Repository",
+        "url": "https://github.com/aayam07/MeroTutorApp"
+      }
+    ],
     "featured": true
   },
   {
@@ -24,6 +30,12 @@
       "Twilio API"
     ],
     "link": "https://github.com/aayam07/eLibrary",
+    "links": [
+      {
+        "label": "GitHub Repository",
+        "url": "https://github.com/aayam07/eLibrary"
+      }
+    ],
     "featured": true
   },
   {
@@ -38,12 +50,18 @@
       "Ubuntu VM"
     ],
     "link": "https://hallbooking.ku.edu.np",
+    "links": [
+      {
+        "label": "Live Production System",
+        "url": "https://hallbooking.ku.edu.np"
+      }
+    ],
     "featured": true
   },
   {
-    "id": "ku-logsheet",
+    "id": "ku-logsheet-ntic",
     "title": "AICKU Staff Logsheet & NTIC Portal",
-    "description": "Staff activity and attendance tracking system utilized daily by 300+ university employees, alongside the official web presence for the Nepal Technology Innovation Center.",
+    "description": "Enterprise staff activity and attendance tracking system utilized daily by 300+ university employees, alongside the official web presence for the Nepal Technology Innovation Center.",
     "tags": [
       "Web Application",
       "Database Systems",
@@ -51,6 +69,48 @@
       "Production Deployment"
     ],
     "link": "https://logsheet.aic.ku.edu.np",
+    "links": [
+      {
+        "label": "Logsheet System",
+        "url": "https://logsheet.aic.ku.edu.np"
+      },
+      {
+        "label": "NTIC Portal",
+        "url": "https://ntic.ku.edu.np"
+      }
+    ],
+    "featured": false
+  },
+  {
+    "id": "ku-archclub",
+    "title": "Kathmandu University Architecture Club",
+    "description": "Official online presence and architectural showcase platform for the Kathmandu University Architecture Club, featuring clean responsive layouts and search engine optimization.",
+    "tags": [
+      "HTML5",
+      "CSS3",
+      "JavaScript",
+      "SEO"
+    ],
+    "link": "https://archclub.ku.edu.np",
+    "links": [
+      {
+        "label": "Live Website",
+        "url": "https://archclub.ku.edu.np"
+      }
+    ],
+    "featured": false
+  },
+  {
+    "id": "ipsf-gpped",
+    "title": "9th IPSF APRO GPPed Program Website",
+    "description": "Responsive conference and educational portal designed and deployed for the 9th IPSF Asia Pacific Regional Office Good Pharmacy Practice Education (GPPed) program.",
+    "tags": [
+      "Web Development",
+      "SEO",
+      "JavaScript",
+      "UI/UX"
+    ],
+    "link": "",
     "featured": false
   },
   {
@@ -65,19 +125,6 @@
       "Elasticsearch"
     ],
     "link": "",
-    "featured": false
-  },
-  {
-    "id": "freelance-websites",
-    "title": "KU Architecture Club & 9th IPSF APRO GPPed",
-    "description": "High-performance, SEO-optimized responsive web portals built for international pharmacy education programs and the Kathmandu University Architecture Club.",
-    "tags": [
-      "JavaScript",
-      "HTML5",
-      "CSS3",
-      "SEO"
-    ],
-    "link": "https://archclub.ku.edu.np",
     "featured": false
   }
 ]
