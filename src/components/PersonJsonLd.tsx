@@ -35,7 +35,9 @@ export function PersonJsonLd() {
     sameAs: [
       socials?.linkedin || "https://linkedin.com/in/aayam-adhikari-588aa11ba",
       socials?.github || "https://github.com/aayam07",
-    ],
+      socials?.instagram,
+      socials?.facebook,
+    ].filter(Boolean),
     knowsAbout: [
       "Live Holographic Video Streaming",
       "Semantic Communication",

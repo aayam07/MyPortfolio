@@ -65,6 +65,26 @@ export default function Contact() {
             GitHub <span className="text-muted-foreground">↗</span>
           </a>
         )}
+        {socials?.instagram && (
+          <a
+            href={socials.instagram}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 px-5 py-2.5 text-sm font-medium border border-border rounded-full hover:bg-muted transition-colors"
+          >
+            Instagram <span className="text-muted-foreground">↗</span>
+          </a>
+        )}
+        {socials?.facebook && (
+          <a
+            href={socials.facebook}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 px-5 py-2.5 text-sm font-medium border border-border rounded-full hover:bg-muted transition-colors"
+          >
+            Facebook <span className="text-muted-foreground">↗</span>
+          </a>
+        )}
       </div>
 
       {/* Interactive Form */}
