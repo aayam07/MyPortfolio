@@ -5,6 +5,9 @@ import { getJsonData } from "@/lib/data";
 import { SectionHeader } from "@/components/SectionHeader";
 import { Mail, MapPin, CheckCircle2, AlertCircle, Loader2 } from "lucide-react";
 
+// Active Formspree form ID
+const FORMSPREE_FORM_ID = "mljboggv";
+
 export default function Contact() {
   const contact = getJsonData("contact.json");
   const socials = getJsonData("socials.json");
