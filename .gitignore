@@ -44,3 +44,11 @@ next-env.d.ts
 /RESUMES/
 generate_*.js
 /my_image.png
+
+# AI assistant instructions & IDE configs
+AGENTS.md
+CLAUDE.md
+.claude/
+.cursor/
+.vscode/
+.idea/
