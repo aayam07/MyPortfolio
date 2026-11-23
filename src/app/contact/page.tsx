@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useForm, ValidationError } from "@formspree/react";
 import { getJsonData } from "@/lib/data";
 import { SectionHeader } from "@/components/SectionHeader";
 import { Mail, MapPin, CheckCircle2, AlertCircle, Loader2 } from "lucide-react";
@@ -9,50 +9,13 @@ export default function Contact() {
   const contact = getJsonData("contact.json");
   const socials = getJsonData("socials.json");
 
-  const [status, setStatus] = useState<"idle" | "loading" | "success" | "error">("idle");
-  const [errorMessage, setErrorMessage] = useState("");
+  // Extract Formspree form ID (e.g. "mljboggv" from "https://formspree.io/f/mljboggv" or direct ID)
+  const rawEndpoint = contact?.formspreeEndpoint || "mljboggv";
+  const formKey = rawEndpoint.includes("/f/") 
+    ? rawEndpoint.split("/f/")[1]?.split("/")[0] || "mljboggv"
+    : rawEndpoint;
 
-  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
-    e.preventDefault();
-    const form = e.currentTarget;
-    const name = (form.elements.namedItem("name") as HTMLInputElement)?.value;
-    const email = (form.elements.namedItem("email") as HTMLInputElement)?.value;
-    const message = (form.elements.namedItem("message") as HTMLTextAreaElement)?.value;
-
-    if (!contact?.formspreeEndpoint) {
-      // Seamless fallback: open pre-filled mail client if Formspree endpoint is not configured yet
-      window.location.href = `mailto:${contact?.email || "aayamadhikari07@gmail.com"}?subject=${encodeURIComponent(
-        `Portfolio Inquiry from ${name}`
-      )}&body=${encodeURIComponent(`${message}\n\nSender: ${name} (${email})`)}`;
-      return;
-    }
-
-    setStatus("loading");
-    setErrorMessage("");
-
-    try {
-      const formData = new FormData(form);
-      const res = await fetch(contact.formspreeEndpoint, {
-        method: "POST",
-        body: formData,
-        headers: {
-          Accept: "application/json",
-        },
-      });
-
-      if (res.ok) {
-        setStatus("success");
-        form.reset();
-      } else {
-        const data = await res.json().catch(() => null);
-        setErrorMessage(data?.errors?.[0]?.message || "Failed to send message. Please email me directly.");
-        setStatus("error");
-      }
-    } catch {
-      setErrorMessage("Network error. Please email me directly.");
-      setStatus("error");
-    }
-  };
+  const [state, handleSubmit, reset] = useForm(formKey);
 
   return (
     <div className="max-w-2xl mx-auto px-6 space-y-16">
@@ -103,7 +66,7 @@ export default function Contact() {
 
       {/* Interactive Form */}
       <div className="pt-8 border-t border-border max-w-xl mx-auto w-full">
-        {status === "success" ? (
+        {state.succeeded ? (
           <div className="p-8 rounded-3xl border border-emerald-500/20 bg-emerald-500/5 text-center space-y-3">
             <CheckCircle2 className="w-10 h-10 text-emerald-500 mx-auto" />
             <h3 className="text-lg font-semibold text-foreground">Message Sent!</h3>
@@ -111,18 +74,24 @@ export default function Contact() {
               Thank you for reaching out. I&apos;ll get back to you as soon as possible.
             </p>
             <button
-              onClick={() => setStatus("idle")}
-              className="text-xs text-foreground underline underline-offset-4 pt-2"
+              type="button"
+              onClick={() => reset()}
+              className="text-xs text-foreground underline underline-offset-4 pt-2 cursor-pointer hover:opacity-80 transition-opacity"
             >
               Send another message
             </button>
           </div>
         ) : (
-          <form className="space-y-6" onSubmit={handleSubmit}>
-            {status === "error" && (
+          <form 
+            action={`https://formspree.io/f/${formKey}`} 
+            method="POST"
+            onSubmit={handleSubmit} 
+            className="space-y-6"
+          >
+            {state.errors && Object.keys(state.errors).length > 0 && (
               <div className="p-4 rounded-xl border border-destructive/20 bg-destructive/5 text-destructive text-sm flex items-center gap-2">
                 <AlertCircle className="w-4 h-4 shrink-0" />
-                <span>{errorMessage}</span>
+                <ValidationError errors={state.errors} />
               </div>
             )}
 
@@ -136,7 +105,9 @@ export default function Contact() {
                 className="w-full bg-background border border-border rounded-xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-primary/20 transition-shadow text-foreground" 
                 placeholder="Jane Doe" 
               />
+              <ValidationError prefix="Name" field="name" errors={state.errors} className="text-xs text-destructive mt-1" />
             </div>
+
             <div>
               <label htmlFor="email" className="block text-sm font-medium mb-2">Email</label>
               <input 
@@ -147,7 +118,9 @@ export default function Contact() {
                 className="w-full bg-background border border-border rounded-xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-primary/20 transition-shadow text-foreground" 
                 placeholder="jane@example.com" 
               />
+              <ValidationError prefix="Email" field="email" errors={state.errors} className="text-xs text-destructive mt-1" />
             </div>
+
             <div>
               <label htmlFor="message" className="block text-sm font-medium mb-2">Message</label>
               <textarea 
@@ -158,13 +131,15 @@ export default function Contact() {
                 className="w-full bg-background border border-border rounded-xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-primary/20 transition-shadow resize-none text-foreground" 
                 placeholder="How can I help you?"
               />
+              <ValidationError prefix="Message" field="message" errors={state.errors} className="text-xs text-destructive mt-1" />
             </div>
+
             <button 
               type="submit" 
-              disabled={status === "loading"}
-              className="w-full inline-flex items-center justify-center gap-2 bg-foreground text-background font-medium rounded-xl px-4 py-3 hover:bg-foreground/90 transition-colors disabled:opacity-50"
+              disabled={state.submitting}
+              className="w-full inline-flex items-center justify-center gap-2 bg-foreground text-background font-medium rounded-xl px-4 py-3 hover:bg-foreground/90 transition-colors disabled:opacity-50 cursor-pointer"
             >
-              {status === "loading" ? (
+              {state.submitting ? (
                 <>
                   <Loader2 className="w-4 h-4 animate-spin" />
                   Sending...
@@ -174,7 +149,7 @@ export default function Contact() {
               )}
             </button>
             <p className="text-xs text-center text-muted-foreground mt-4">
-              Sends directly to aayamadhikari07@gmail.com.
+              Sends directly to {contact?.email || "aayamadhikari07@gmail.com"}.
             </p>
           </form>
         )}
