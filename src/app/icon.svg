@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="128" y2="128" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#18181b"/>
+      <stop offset="100%" stop-color="#09090b"/>
+    </linearGradient>
+    <linearGradient id="glyph" x1="0" y1="26" x2="0" y2="102" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="#f4f4f5"/>
+    </linearGradient>
+  </defs>
+  
+  <!-- Sleek Dark Squircle Badge -->
+  <rect width="128" height="128" rx="28" fill="url(#bg)"/>
+  <rect width="126" height="126" x="1" y="1" rx="27" fill="none" stroke="#27272a" stroke-width="2" stroke-opacity="0.8"/>
+  
+  <!-- Architectural Modernist Monogram 'A' -->
+  <path d="M 64 26 L 99 102 L 83 102 L 75.5 83 L 52.5 83 L 45 102 L 29 102 Z M 64 47 L 56.5 71 L 71.5 71 Z" 
+        fill="url(#glyph)"/>
+</svg>
